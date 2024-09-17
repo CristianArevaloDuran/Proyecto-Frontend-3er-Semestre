@@ -15,15 +15,49 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     min-width: 65%;
     min-height: 200px;
 
     margin: 0 1% 0 4%;
+    padding-bottom: 20px;
 
     background: linear-gradient(236.36deg, #FFFFFF 10.05%, #F1F1F1 50%);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
+}
+
+.container .recents-container .head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .recents-container .head h2 {
+    font-weight: 700;
+    font-size: 32px;
+    font-family: var(--font-family);
+    color: var(--font-color);
+    margin: 15px 0 0 20px;
+}
+
+.container .recents-container .head svg {
+    margin: 15px 20px 0 0;
+    width: 40px;
+    height: 40px;
+}
+
+.container .recents-container .cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+
+    margin-top: 20px;
 }
 
 /* Cursos */

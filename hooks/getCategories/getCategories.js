@@ -4,7 +4,7 @@ export default function getCategories() {
     const [categories, setCategories] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch('http://localhost:5000/categories')
+        fetch('http://localhost:4001/categories')
             .then((response) => response.json())
             .then((data) => {
                 setCategories(data)

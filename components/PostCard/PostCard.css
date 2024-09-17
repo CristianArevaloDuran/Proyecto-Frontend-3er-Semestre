@@ -1,0 +1,118 @@
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin: 20px 20px 0 20px;
+}
+
+.card-container:first-child {
+    margin-top: 0;
+}
+
+.card-container .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 40px 30px;
+
+    background: linear-gradient(47.33deg, #FFFFFF 12.6%, #F1F1F1 50%);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    text-decoration: none;
+    font-family: var(--font-family);
+    color: var(--font-color);
+
+    position: relative;
+    overflow: hidden;
+}
+
+.card-container .card .card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 45%;
+
+    z-index: 2;
+}
+
+.card-container .card .card-title h3 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.card-container .card .card-title p {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.card-container .card .card-divider {
+    height: 100px;
+    width: 2px;
+    background-color: #ABABAB;
+    border-radius: 50px;
+
+    z-index: 2;
+}
+
+.card-container .card .card-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+
+    z-index: 2;
+}
+
+.card-container .card .card-details p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card-container .card::after {
+    content: '';
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    background: linear-gradient(297.13deg, rgba(255, 129, 129, 0.27) 16.12%, rgba(255, 133, 250, 0.27) 33.06%, rgba(215, 133, 255, 0.27) 50.34%, rgba(160, 126, 255, 0.27) 66.94%, rgba(130, 202, 255, 0.27) 83.88%);
+
+    transition: all 0.3s;
+
+}
+
+.card-container .card::before {
+    content: '';
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+
+    transition: all 0.3s;
+}
+
+.card-container .card:hover::before {
+    height: 100%;
+}
+
+.card-container .card:hover::after {
+    height: 100%;
+}
