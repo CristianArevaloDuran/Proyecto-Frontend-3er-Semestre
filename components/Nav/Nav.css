@@ -1,0 +1,130 @@
+nav {
+    height: 90px;
+    width: 100%;
+
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 30px 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+}
+
+nav .gradient-background {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(266.23deg, rgba(193, 251, 255, 0.4) 43.82%, rgba(255, 125, 203, 0.39) 56.18%);
+    border-radius: 0px 0px 30px 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .blur-background {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 30px 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+/* ----  */
+
+nav .logo a {
+    text-decoration: none;
+}
+
+nav .logo h1 {
+    font-size: 32px;
+    color: var(--font-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+}
+
+/* ---- */
+
+nav .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+
+    position: relative;
+    margin-left: 20px;
+    margin-right: -10px;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+nav .nav-links a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    background: var(--font-color);
+    border-radius: 10px;
+
+    transition: height 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+nav .nav-links a:hover::after {
+    height: 100%;
+}
+
+nav .nav-links a:hover {
+    color: white;
+}
+
+/* Lists 
+
+position: absolute;
+width: 78px;
+height: 50px;
+right: 70px;
+top: 20px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 14px;
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+*/
