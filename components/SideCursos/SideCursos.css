@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: flex-start;
 
     min-width: 25%;
     min-height: 100px;

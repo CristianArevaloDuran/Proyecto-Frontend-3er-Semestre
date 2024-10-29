@@ -1,4 +1,7 @@
 'use client'
+
+import './styles.css'; 
+
 import getPost from '@/hooks/getPost/getPost';
 import Loader from '@/components/Loader/Loader';
 import Markdown from 'markdown-to-jsx';

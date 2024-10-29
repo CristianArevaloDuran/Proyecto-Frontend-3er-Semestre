@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+
+/* Recents */
+
+.container .recents-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    min-width: 65%;
+    min-height: 200px;
+
+    margin: 0 1% 0 4%;
+    padding-bottom: 20px;
+
+    background: linear-gradient(236.36deg, #FFFFFF 10.05%, #F1F1F1 50%);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.container .recents-container .cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+
+    margin-top: 20px;
+}
+
+/* Cursos */
+
+
