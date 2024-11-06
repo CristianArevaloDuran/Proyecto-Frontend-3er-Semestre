@@ -11,7 +11,7 @@ export default function Post({ id }) {
     console.log(post);
     
     return (
-        <div>
+        <div className='post'>
             {
                 loading ? <Loader /> : <Markdown>{post.content}</Markdown>
             }

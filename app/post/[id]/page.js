@@ -10,9 +10,7 @@ export default function PostPage({ params }) {
     <div className="container">
       <div className="recents-container">
         <div className="cards-container">
-        <div>
-            <Post id={params.id} />
-        </div>
+          <Post id={params.id} />
         </div>
       </div>
       <SideCursos />
