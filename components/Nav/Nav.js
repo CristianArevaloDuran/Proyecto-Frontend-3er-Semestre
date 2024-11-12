@@ -15,7 +15,7 @@ export default function Nav() {
           <div className='nav-links'>
             <ul>
               <li>
-                <Link href='/'>Categorias</Link>
+                <Link href='/categories'>Categorias</Link>
               </li>
             </ul>
           </div>

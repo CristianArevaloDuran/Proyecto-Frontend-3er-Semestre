@@ -2,18 +2,14 @@
 
 import './styles.css'; 
 
-import getPost from '@/hooks/getPost/getPost';
 import Loader from '@/components/Loader/Loader';
 import Markdown from 'markdown-to-jsx';
 
-export default function Post({ id }) {
-    const { post, loading } = getPost(id);
-    console.log(post);
-    
+export default function Post({ post }) {
     return (
         <div className='post'>
             {
-                loading ? <Loader /> : <Markdown>{post.content}</Markdown>
+                post.loading ? <Loader /> : <Markdown>{post.post.content}</Markdown>
             }
         </div>
     );
