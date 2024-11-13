@@ -6,10 +6,14 @@ import getPost from '@/hooks/getPost/getPost';
 import Post from '@/components/Post/Post';
 import SideCursos from '@/components/SideCursos/SideCursos';
 import Link from 'next/link';
+import React from 'react';
 
 export default function PostPage({ params }) {
-    
-  const post = getPost(params.id);  
+  
+  const unwrappedParams = React.use(params); // Unwrap the promise
+  const { id } = unwrappedParams;
+
+  const post = getPost(id);  
   
   return (
     <div className="container">
